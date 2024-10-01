@@ -1,0 +1,53 @@
+/* Style de la boîte de recherche */
+.search-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 100px auto;
+    position: relative;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    border-radius: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #4285f4;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Style des suggestions */
+.suggestions-box {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    z-index: 10;
+    max-height: 200px;
+    overflow-y: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.suggestions-box li {
+    padding: 12px;
+    list-style-type: none;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.suggestions-box li:hover {
+    background-color: #f0f0f0;
+}
+
+.suggestions-box li:last-child {
+    border-bottom: none;
+}
